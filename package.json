@@ -1,0 +1,39 @@
+{
+  "name": "procedural-strings-js",
+  "version": "1.0.0",
+  "description": "procedural generation of beautiful svg shapes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v-braun/procedural-strings-js.git"
+  },
+  "main": "./index.js",
+  "bin": {
+    "procedural-strings-js": "./cli.js"
+  },
+  "scripts": {
+    "test": "ava",
+    "doc": "./node_modules/jsdoc-to-markdown/bin/cli.js ./**/*.js > DOCUMENTATION.md"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/v-braun/procedural-strings-js/issues"
+  },
+  "author": "v-braun (mail@viktor-braun.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.0.1",
+    "jsdoc-to-markdown": "^4.0.1",
+    "svg-parser": "^1.0.5"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*"
+    ]
+  },
+  "dependencies": {
+    "options-parser": "^0.4.0",
+    "procedural-strings-js": "^1.0.0",
+    "sharp": "^0.30.1",
+    "text-to-svg": "^3.1.5"
+  }
+}
